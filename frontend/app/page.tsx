@@ -75,8 +75,8 @@ export default function Home() {
         <div className="bg-white rounded-md shadow p-4 flex flex-col gap-3">
           <p className="text-sm text-slate-600">Manual telemetry actions—useful to demo funnels and failed attempts.</p>
           <div className="flex gap-2">
-            <button className="px-3 py-1 rounded bg-amber-600 text-white" onClick={() => send('sermon-notes','open')}>emit open</button>
-            <button className="px-3 py-1 rounded bg-rose-600 text-white" onClick={() => send('sermon-notes','submit',{ success: false, errorCode: 'VALIDATION_MISSING_FIELD' })}>emit failed submit</button>
+            <button className="px-3 py-1 rounded bg-amber-600 text-white" onClick={() => send('manual emit open','open')}>emit open</button>
+            <button className="px-3 py-1 rounded bg-rose-600 text-white" onClick={() => send('manual emit submit','submit',{ success: false, errorCode: 'VALIDATION_MISSING_FIELD' })}>emit failed submit</button>
             <button className="px-3 py-1 rounded bg-emerald-600 text-white" onClick={() => send('sermon-notes','success',{ success: true })}>emit success</button>
           </div>
 

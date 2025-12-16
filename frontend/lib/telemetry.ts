@@ -38,7 +38,7 @@ class Telemetry {
     extra?: Record<string, any>
   }) {
     const { featureId, event, extra, ...rest } = props;
-    const name = 'FeatureUsed';
+    const name = featureId;
     const properties: Record<string,string> = {
       featureId,
       event,
