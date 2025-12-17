@@ -5,8 +5,9 @@ import { telemetry } from '../lib/telemetry';
 
 export default function Home() {
   // demo user info (in real app obtain from auth)
+  const randomInt = Math.floor(Math.random() * 1000);
   const user = {
-    id: 'nico-123-hash',
+    id: `user-${randomInt}`,
     displayName: 'Nicholas Cruz',
     traits: ['Jesus', 'Azure', 'TypeScript', 'React/NextJS', 'C#/.NET', 'video games', 'pop punk']
   };
